@@ -1,5 +1,6 @@
 package com.example;
 
+import main.java.com.example.Endereco;
 import main.java.com.example.Pessoa;
 
 /**
@@ -16,6 +17,20 @@ public class App {
         System.out.println(p1.getNome());
         System.out.println(p1.getIdade());
         System.out.println(p1.getSigno());
+
+        Endereco e1 = new Endereco(
+                "Pedro dos Anjos",
+                406,
+                "Cobé ",
+                "RN",
+                "Vera Cruz",
+                "59182600",
+                "84996300756");
+
+        e1.setTelefone("84999048140");
+        e1.setEstado("RNN");
+
+        System.out.println(e1.toString());
 
     }
 }
